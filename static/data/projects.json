@@ -1,10 +1,12 @@
 {
   "projects": [
     {
-      "name": "Organicos Pilatti"
+      "name": "Orgânicos Pilatti",
+      "slug": "organicos-pilatti"
     },
     {
-      "name": "Glass Service"
+      "name": "Glass Service",
+      "slug": "glass-service"
     }
   ]
 }

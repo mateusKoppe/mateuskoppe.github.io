@@ -2,35 +2,23 @@
   <section class="container">
     <div>
       <h1 class="title">
-        Mateus Koppe
+        {{project.name}}
       </h1>
-      <p class="quote">Olá, sou desenvolvedor web. Desenvolvo sites institucionais e sistemas de baixa e média complexidade, utilizo tecnologias atuais e trabalho priozando a perfomance e as boas práticas.</p>
+      <p class="quote"></p>
       <br>
       <hr>
       <br>
-      <h2 class="title">
-        Projetos
-      </h2>
-      <div>
-        <nuxt-link
-          :to="'projects/'+ project.slug"
-          class="project-card"
-          v-for="(project, index) in projects"
-          :key="index"
-          >
-          {{project.name}}
-        </nuxt-link>
-      </div>
+      {{project.stack}}
     </div>
   </section>
 </template>
 
 <script>
 export default {
-  async asyncData ({ store }) {
-    const res = await store.dispatch('project/loadList')
+  async asyncData ({ store, params }) {
+    const data = await store.dispatch('project/getItem', params.slug)
     return {
-      projects: store.state.project.list
+      project: data
     }
   },
 }
@@ -84,4 +72,3 @@ h2.title {
   padding-top: 15px;
 }
 </style>
-

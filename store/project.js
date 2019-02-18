@@ -5,9 +5,13 @@ export const state = () => ({
 })
 
 export const actions = {
-  async loadList ({ commit, $api }) {
+  async loadList ({ commit }) {
     const res = await this.$api.get('projects.json')
     commit('setList', res.data.projects)
+  },
+  async getItem ({}, slug) {
+    const res = await this.$api.get(`projects/${slug}.json`)
+    return res.data
   }
 }
 
