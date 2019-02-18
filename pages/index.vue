@@ -7,12 +7,19 @@
       <h2 class="subtitle">
         Mateus Koppe Developer
       </h2>
+      {{projects}}
     </div>
   </section>
 </template>
 
 <script>
 export default {
+  async asyncData ({ store }) {
+    const res = await store.dispatch('project/loadList')
+    return {
+      projects: store.state.project.list
+    }
+  },
 }
 </script>
 

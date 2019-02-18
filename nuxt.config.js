@@ -18,17 +18,23 @@ module.exports = {
   */
   loading: { color: '#3B8070' },
   /*
+  ** Plugins
+  */
+  plugins: [
+    '~/plugins/api.js'
+  ],
+  /*
   ** Build configuration
   */
   build: {
     /*
-    ** Run ESLint on save
+     ** Run ESLint on save
     */
     extend (config, { isDev, isClient }) {
       if (isDev && isClient) {
         config.module.rules.push({
           enforce: 'pre',
-          test: /\.(js|vue)$/,
+         test: /\.(js|vue)$/,
           loader: 'eslint-loader',
           exclude: /(node_modules)/
         })
