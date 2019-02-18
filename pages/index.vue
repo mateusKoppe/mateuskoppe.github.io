@@ -11,7 +11,7 @@
       <h2 class="title">
         Projetos
       </h2>
-      <div>
+      <div class="projects">
         <nuxt-link
           :to="'projects/'+ project.slug"
           class="project-card"
@@ -71,8 +71,15 @@ h2.title {
   margin-bottom: 15px;
 }
 
+.projects {
+  display: grid;
+  grid-template-columns: 33.3% 33.3% 33.3%;
+  grid-template-rows: 150px;
+}
+
 .project-card {
   display: inline-block;
+  background-color: white;
   box-shadow: 0 .3px 5px .2px rgba(30, 30, 30, .3);
   max-width: 300px;
   color: #35495e;
