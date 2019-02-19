@@ -1,4 +1,0 @@
-{
-  "name": "Glass Service",
-  "stack": ["Vue", "Node.js", "Express", "MySQL"]
-}

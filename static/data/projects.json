@@ -2,11 +2,13 @@
   "projects": [
     {
       "name": "Orgânicos Pilatti",
-      "slug": "organicos-pilatti"
+      "slug": "organicos-pilatti",
+      "logo": "logo.png"
     },
     {
-      "name": "Glass Service",
-      "slug": "glass-service"
+      "name": "Menpet",
+      "slug": "menpet",
+      "logo": "logo.png"
     }
   ]
 }

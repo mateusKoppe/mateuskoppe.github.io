@@ -13,12 +13,15 @@
       </h2>
       <div class="projects">
         <nuxt-link
-          :to="'projects/'+ project.slug"
           class="project-card"
+          :to="'projects/'+ project.slug"
           v-for="(project, index) in projects"
           :key="index"
           >
-          {{project.name}}
+          <img
+            class="project-card__logo"
+            :src="'/projects/'+project.slug+'/'+project.logo"
+            >
         </nuxt-link>
       </div>
     </div>
@@ -72,19 +75,28 @@ h2.title {
 }
 
 .projects {
+  width: 100vw;
+  max-width: 850px;
   display: grid;
   grid-template-columns: 33.3% 33.3% 33.3%;
-  grid-template-rows: 150px;
+  grid-template-rows: 170px 170px;
 }
 
 .project-card {
-  display: inline-block;
+  display: inline-flex;
   background-color: white;
   box-shadow: 0 .3px 5px .2px rgba(30, 30, 30, .3);
   max-width: 300px;
   color: #35495e;
   padding: 15px;
   margin: 10px;
+  justify-content: center;
+  align-items: center;
+}
+
+.project-card__logo {
+  max-width: 100%;
+  max-height: 100%;
 }
 
 .links {
