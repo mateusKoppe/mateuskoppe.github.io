@@ -1,15 +1,17 @@
 <template>
   <div>
     <section class="container">
-      <span class="wellcoming title">
-        Olá
-      </span>
+      <h1 class="title"> Mateus Koppe </h1>
+      <br>
+      <h2 class="title"> Sobre </h2>
       <p class="quote">Me chamo Mateus Koppe e sou um desenvolvedor web. Desenvolvo sites institucionais e sistemas de baixa e média complexidade, utilizo tecnologias atuais e trabalho priozando a perfomance e as boas práticas.</p>
     </section>
     <section class="container">
-      <h2 class="title">
-        Projetos
-      </h2>
+      <h2 class="title"> Skills </h2>
+      <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque sapien velit, aliquet eget commodo nec, auctor a sapien. Nam eu neque vulputate diam rhoncus faucibus. Curabitur quis varius libero. Lorem. </p>
+    </section>
+    <section class="container">
+      <h2 class="title"> Projetos </h2>
       <div class="projects">
         <nuxt-link
           class="project-card"
@@ -23,6 +25,10 @@
             >
         </nuxt-link>
       </div>
+    </section>
+    <section class="container">
+      <h2 class="title"> Contato </h2>
+      <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque sapien velit, aliquet eget commodo nec, auctor a sapien. Nam eu neque vulputate diam rhoncus faucibus. Curabitur quis varius libero. Lorem. </p>
     </section>
   </div>
 </template>
