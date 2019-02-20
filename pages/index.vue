@@ -1,10 +1,10 @@
 <template>
   <section class="container">
     <div>
-      <h1 class="title">
-        Mateus Koppe
-      </h1>
-      <p class="quote">Olá, sou desenvolvedor web. Desenvolvo sites institucionais e sistemas de baixa e média complexidade, utilizo tecnologias atuais e trabalho priozando a perfomance e as boas práticas.</p>
+      <span class="wellcoming title">
+        Olá
+      </span>
+      <p class="quote">Me chamo Mateus Koppe e sou um desenvolvedor web. Desenvolvo sites institucionais e sistemas de baixa e média complexidade, utilizo tecnologias atuais e trabalho priozando a perfomance e as boas práticas.</p>
       <br>
       <hr>
       <br>
@@ -39,7 +39,7 @@ export default {
 }
 </script>
 
-<style>
+<style lang="scss">
 .container {
   min-height: 100vh;
   display: flex;
@@ -48,48 +48,26 @@ export default {
   text-align: center;
 }
 
-.title {
-  font-family: "Quicksand", "Source Sans Pro", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; /* 1 */
-  display: block;
-  font-weight: 300;
-  color: #35495e;
-  letter-spacing: 1px;
-}
-
-h1.title {
-  font-size: 100px;
-}
-
-h2.title {
-  font-size: 70px;
-}
-
-.quote {
-  color: #35495e;
-  max-width: 700px;
-  text-align: left;
-  padding-left: 20px;
-  border-left: #35495e solid 3px;
-  margin-top: 15px;
-  margin-bottom: 15px;
+.wellcoming {
+  font-size: 11rem;
 }
 
 .projects {
   width: 100vw;
-  max-width: 850px;
+  max-width: 85rem;
   display: grid;
   grid-template-columns: 33.3% 33.3% 33.3%;
-  grid-template-rows: 170px 170px;
+  grid-template-rows: 17rem 17rem;
 }
 
 .project-card {
   display: inline-flex;
   background-color: white;
-  box-shadow: 0 .3px 5px .2px rgba(30, 30, 30, .3);
-  max-width: 300px;
+  box-shadow: 0 .03rem .5rem .02rem rgba(30, 30, 30, .3);
+  max-width: 30rem;
   color: #35495e;
-  padding: 15px;
-  margin: 10px;
+  padding: 1.5rem;
+  margin: 1rem;
   justify-content: center;
   align-items: center;
 }
@@ -98,9 +76,4 @@ h2.title {
   max-width: 100%;
   max-height: 100%;
 }
-
-.links {
-  padding-top: 15px;
-}
 </style>
-
