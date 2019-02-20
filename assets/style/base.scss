@@ -10,11 +10,24 @@ html {
   margin: 0;
 }
 
+section.container {
+  padding-top: 3rem;
+  padding-bottom: 2.5rem;
+}
+
+.container {
+  width: 100%;
+  max-width: 80rem;
+  margin: auto;
+}
+
 .title {
   font-family: "Quicksand", "Source Sans Pro", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; /* 1 */
   display: block;
   font-weight: 300;
   color: #35495e;
+  margin-bottom: .2em;
+  margin-top: .06em;
 }
 
 h1.title {
@@ -27,11 +40,11 @@ h2.title {
 
 .quote {
   color: #35495e;
-  font-size: 2rem;
+  font-size: 2em;
   max-width: 70rem;
   text-align: left;
-  padding-left: 2rem;
-  border-left: #35495e solid 3px;
+  padding-left: 1.5em;
+  border-left: #35495e solid .2em;
   margin-top: 1.5rem;
   margin-bottom: 1.5rem;
 }

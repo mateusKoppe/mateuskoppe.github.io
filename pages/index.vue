@@ -1,13 +1,12 @@
 <template>
-  <section class="container">
-    <div>
+  <div>
+    <section class="container">
       <span class="wellcoming title">
         Olá
       </span>
       <p class="quote">Me chamo Mateus Koppe e sou um desenvolvedor web. Desenvolvo sites institucionais e sistemas de baixa e média complexidade, utilizo tecnologias atuais e trabalho priozando a perfomance e as boas práticas.</p>
-      <br>
-      <hr>
-      <br>
+    </section>
+    <section class="container">
       <h2 class="title">
         Projetos
       </h2>
@@ -24,8 +23,8 @@
             >
         </nuxt-link>
       </div>
-    </div>
-  </section>
+    </section>
+  </div>
 </template>
 
 <script>
@@ -40,14 +39,6 @@ export default {
 </script>
 
 <style lang="scss">
-.container {
-  min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-}
-
 .wellcoming {
   font-size: 11rem;
 }
