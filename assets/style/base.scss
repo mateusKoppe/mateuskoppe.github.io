@@ -16,8 +16,14 @@ body {
   margin: 0;
 }
 
+p {
+  margin-top: .2em;
+  margin-bottom: .25em;
+}
+
 .section.is-primary {
   --color-text: white;
+  color: var(--color-text);
   background-color: var(--color-primary);
 }
 
@@ -67,7 +73,6 @@ body {
     font-size: 3.2rem;
   }
 }
-
 
 .quote {
   color: var(--color-text);

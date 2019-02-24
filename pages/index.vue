@@ -1,7 +1,7 @@
 <template>
   <div>
-    <section class="section container is-spaced">
-      <div class="intruduction-section">
+    <section class="intruduction-section">
+      <div class="container is-spaced">
         <h1 class="title is-size-1"> Procurando por um Web Developer? </h1>
         <p class="subtitle is-size-1 is-black"> Mateus Koppe, Full-stack developer. </p>
         <br>
@@ -10,10 +10,13 @@
         </figure>
       </div>
     </section>
-    <section class="section is-primary">
+    <section class="about-section section is-primary">
       <div class="container is-spaced">
         <h2 class="title is-size-2"> Sobre </h2>
-        <p class="quote">Me chamo Mateus Koppe e sou um desenvolvedor web. Desenvolvo sites institucionais e sistemas de baixa e média complexidade, utilizo tecnologias atuais e trabalho priozando a perfomance e as boas práticas.</p>
+        <p> Olá, me chamo Mateus Koppe e sou Web Developer a 3 anos. Tenho experiência em desenvolvimento de sites, com foco em responsividade e conversão de leads. </p>
+        <p> Além disso desenvolvo sistemas de média e baixa complexidade, precisa de um sistema para gerenciar o seu negócio? Pode contar comigo! </p>
+        <p> Faço manunteção em projetos com uma stack semelhar ao meu conhecimento. </p>
+        <br>
       </div>
     </section>
     <section class="section container is-spaced">
@@ -76,6 +79,11 @@ export default {
       margin: 0;
     }
   }
+}
+
+.about-section {
+  text-align: center;
+  font-size: 2.5rem;
 }
 
 .projects {
