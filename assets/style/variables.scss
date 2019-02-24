@@ -1,0 +1,9 @@
+$color-text: #293347;
+$color-text-black: #141414;
+$color-primary: #6843FF;
+
+html {
+  --color-text: #293347;
+  --color-text-black: #{$color-text-black};
+  --color-primary: #{$color-primary};
+}

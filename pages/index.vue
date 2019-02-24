@@ -1,17 +1,23 @@
 <template>
   <div>
-    <section class="container">
-      <h1 class="title"> Mateus Koppe </h1>
-      <br>
-      <h2 class="title"> Sobre </h2>
-      <p class="quote">Me chamo Mateus Koppe e sou um desenvolvedor web. Desenvolvo sites institucionais e sistemas de baixa e média complexidade, utilizo tecnologias atuais e trabalho priozando a perfomance e as boas práticas.</p>
+    <section class="section container is-spaced">
+      <div class="intruduction-section">
+        <h1 class="title is-size-1"> Procurando por um Web Developer? </h1>
+        <p class="subtitle is-size-1 is-black"> Mateus Koppe, Full-stack developer. </p>
+      </div>
     </section>
-    <section class="container">
-      <h2 class="title"> Skills </h2>
+    <section class="section is-primary">
+      <div class="container is-spaced">
+        <h2 class="title is-size-2"> Sobre </h2>
+        <p class="quote">Me chamo Mateus Koppe e sou um desenvolvedor web. Desenvolvo sites institucionais e sistemas de baixa e média complexidade, utilizo tecnologias atuais e trabalho priozando a perfomance e as boas práticas.</p>
+      </div>
+    </section>
+    <section class="section container is-spaced">
+      <h2 class="title is-size-2"> Skills </h2>
       <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque sapien velit, aliquet eget commodo nec, auctor a sapien. Nam eu neque vulputate diam rhoncus faucibus. Curabitur quis varius libero. Lorem. </p>
     </section>
-    <section class="container">
-      <h2 class="title"> Projetos </h2>
+    <section class="section container is-space">
+      <h2 class="title is-size-2"> Projetos </h2>
       <div class="projects">
         <nuxt-link
           class="project-card"
@@ -26,8 +32,8 @@
         </nuxt-link>
       </div>
     </section>
-    <section class="container">
-      <h2 class="title"> Contato </h2>
+    <section class="section container is-spaced">
+      <h2 class="title is-size-2"> Contato </h2>
       <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque sapien velit, aliquet eget commodo nec, auctor a sapien. Nam eu neque vulputate diam rhoncus faucibus. Curabitur quis varius libero. Lorem. </p>
     </section>
   </div>
@@ -47,6 +53,10 @@ export default {
 <style lang="scss">
 .wellcoming {
   font-size: 11rem;
+}
+
+.intruduction-section {
+  padding: 10rem 0 6rem 0;
 }
 
 .projects {
