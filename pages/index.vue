@@ -4,6 +4,10 @@
       <div class="intruduction-section">
         <h1 class="title is-size-1"> Procurando por um Web Developer? </h1>
         <p class="subtitle is-size-1 is-black"> Mateus Koppe, Full-stack developer. </p>
+        <br>
+        <figure class="photo">
+          <img src="~/assets/images/koppe.jpg">
+        </figure>
       </div>
     </section>
     <section class="section is-primary">
@@ -56,7 +60,22 @@ export default {
 }
 
 .intruduction-section {
-  padding: 10rem 0 6rem 0;
+  padding: 3rem 0;
+  text-align: center;
+
+  .photo {
+    font-size: 0;
+    width: 20rem;
+    margin: 1rem auto;
+    border-radius: 4rem;
+    overflow: hidden;
+    box-shadow: 0rem 0.3rem 1rem 0.3rem rgba(30, 30, 30, .4);
+
+    img {
+      width: 100%;
+      margin: 0;
+    }
+  }
 }
 
 .projects {
