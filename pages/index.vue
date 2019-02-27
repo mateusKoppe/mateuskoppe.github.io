@@ -24,7 +24,7 @@
         <div class="skills-section-floating-box">
           <div class="big-card">
             <div class="big-card-header">
-              <h2 class="big-card-title"> Skills </h2>
+              <h2 class="big-card-title is-color-primary-dark"> Skills </h2>
             </div>
             <div class="big-card-body has-no-padding">
               <div class="skill-category-wrap">
