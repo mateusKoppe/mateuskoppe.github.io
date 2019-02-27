@@ -1,0 +1,23 @@
+.big-card {
+  --color-text: #{$color-text};
+  color: var(--color-text);
+  background-color: white;
+  border: rgba(0, 0, 0, .3) 1px solid;
+  border-radius: 3rem;
+  box-shadow: 0rem 0.3rem 1rem 0.3rem rgba(30, 30, 30, .4);
+  overflow: hidden;
+}
+
+.big-card-header {
+  text-align: center;
+  padding: 15px;
+}
+
+.big-card-title {
+  font-size: 2em;
+}
+
+.big-card-body {
+  padding: 15px;
+}
+
