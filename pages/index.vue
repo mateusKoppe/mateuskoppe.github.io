@@ -29,6 +29,7 @@
             <div class="big-card-body has-no-padding">
               <div class="skill-category-wrap">
                 <div class="skill-category">
+                  <span class="skill-category-icon is-front-end"></span>
                   <h3 class="skill-category-title is-size-1"> Front-end </h3>
                   <h4 class="skill-category-title is-size-2"> Linguagens </h4>
                   <ul class="skill-category-list">
@@ -49,6 +50,7 @@
                   </ul>
                 </div>
                 <div class="skill-category">
+                  <span class="skill-category-icon is-back-end"></span>
                   <h3 class="skill-category-title is-size-1"> Back-end </h3>
                   <h4 class="skill-category-title is-size-2"> Linguagens </h4>
                   <ul class="skill-category-list">
@@ -68,6 +70,7 @@
                   </ul>
                 </div>
                 <div class="skill-category">
+                  <span class="skill-category-icon is-anothers"></span>
                   <h3 class="skill-category-title is-size-1"> Além disso... </h3>
                   <ul class="skill-category-list">
                     <li>Docker</li>
@@ -197,6 +200,27 @@ export default {
   list-style: none;
   line-height: 1.75em;
   padding: 0;
+}
+.skill-category-icon {
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: block;
+  height: 11rem;
+  margin-top: 1rem;
+  margin-bottom: 3rem;
+
+  &.is-front-end {
+    background-image: url(~/assets/images/web.svg);
+  }
+
+  &.is-back-end {
+    background-image: url(~/assets/images/cog.svg);
+  }
+
+  &.is-anothers {
+    background-image: url(~/assets/images/lamp.svg);
+  }
 }
 
 .projects {
