@@ -28,8 +28,8 @@ p {
 }
 
 .container.is-spaced {
-  padding-top: 3rem;
-  padding-bottom: 2.5rem;
+  padding-top: 3.5rem;
+  padding-bottom: 3rem;
 }
 
 .container {
@@ -45,6 +45,10 @@ p {
   margin-bottom: .6em;
   margin-top: .5em;
   text-align: center;
+
+  &.has-no-margin {
+    margin: 0;
+  }
 
   &.is-size-1 {
     font-size: 4.8rem;

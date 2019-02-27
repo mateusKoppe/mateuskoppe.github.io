@@ -19,13 +19,73 @@
         <br>
       </div>
     </section>
-    <section class="section container is-spaced">
-      <h2 class="title is-size-2"> Skills </h2>
-      <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque sapien velit, aliquet eget commodo nec, auctor a sapien. Nam eu neque vulputate diam rhoncus faucibus. Curabitur quis varius libero. Lorem. </p>
+    <section class="section skills-section is-primary">
+      <div class="container">
+        <div class="skills-section-floating-box">
+          <div class="big-card">
+            <div class="big-card-header">
+              <h2 class="big-card-title"> Skills </h2>
+            </div>
+            <div class="big-card-body has-no-padding">
+              <div class="skill-category-wrap">
+                <div class="skill-category">
+                  <h3 class="skill-category-title is-size-1"> Front-end </h3>
+                  <h4 class="skill-category-title is-size-2"> Linguagens </h4>
+                  <ul class="skill-category-list">
+                    <li> JavaScript </li>
+                    <li> Scss </li>
+                    <li> Pug </li>
+                  </ul>
+                  <h4 class="skill-category-title is-size-2"> Frameworks </h4>
+                  <ul class="skill-category-list">
+                    <li> Vue </li>
+                    <li> AngularJs (legado) </li>
+                    <li> Bootstrap </li>
+                  </ul>
+                  <h4 class="skill-category-title is-size-2"> Habilidades </h4>
+                  <ul class="skill-category-list">
+                    <li> Responsividade </li>
+                    <li> Pwa </li>
+                  </ul>
+                </div>
+                <div class="skill-category">
+                  <h3 class="skill-category-title is-size-1"> Back-end </h3>
+                  <h4 class="skill-category-title is-size-2"> Linguagens </h4>
+                  <ul class="skill-category-list">
+                    <li> Node.Js </li>
+                    <li> Php </li>
+                    <li> SQL </li>
+                  </ul>
+                  <h4 class="skill-category-title is-size-2"> Frameworks </h4>
+                  <ul class="skill-category-list">
+                    <li> Laravel </li>
+                    <li> Express </li>
+                    <li> Slim-Php </li>
+                  </ul>
+                  <h4 class="skill-category-title is-size-2"> Habilidades </h4>
+                  <ul class="skill-category-list">
+                    <li> RESTful API </li>
+                  </ul>
+                </div>
+                <div class="skill-category">
+                  <h3 class="skill-category-title is-size-1"> Além disso... </h3>
+                  <ul class="skill-category-list">
+                    <li>Docker</li>
+                    <li>Gulp</li>
+                    <li>Git</li>
+                    <li>Linux</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
+    <div style="clear: both"></div>
     <section class="section container is-space">
       <h2 class="title is-size-2"> Projetos </h2>
-      <div class="projects">
+      <div>
         <nuxt-link
           class="project-card"
           :to="'projects/'+ project.slug"
@@ -84,6 +144,59 @@ export default {
 .about-section {
   text-align: center;
   font-size: 2.5rem;
+  padding: 0 10rem;
+}
+
+.skills-section {
+  --overlay-size: 20rem;
+  padding-top: var(--overlay-size);
+}
+
+.skills-section-floating-box {
+  float: left;
+  width: 100%;
+  margin-top: calc(var(--overlay-size) * -1);
+}
+
+.skill-category-wrap {
+  display: grid;
+  grid-template-columns: 33.3% 33.3% 33.3%;
+}
+
+.skill-category {
+  border-color: rgba(30, 30, 30, .2);
+  border-style: solid;
+  border-width: 0;
+  border-right-width: 1px;
+  border-top-width: 1px;
+  padding: 2rem;
+  text-align: center;
+
+  &:last-child {
+    border-right-width: 0px;
+  }
+}
+
+.skill-category-title {
+  color: var(--color-primary-dark);
+  font-weight: 600;
+  margin-top: .8em;
+  margin-bottom: .3em;
+
+  &.is-size-1 {
+    font-size: 1.3em;
+  }
+
+  &.is-size-2 {
+    font-weight: 400;
+    font-size: 1em;
+  }
+}
+
+.skill-category-list {
+  list-style: none;
+  line-height: 1.75em;
+  padding: 0;
 }
 
 .projects {
