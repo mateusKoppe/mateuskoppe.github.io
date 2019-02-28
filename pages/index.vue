@@ -86,14 +86,15 @@
       </div>
     </section>
     <div style="clear: both"></div>
-    <section class="section container is-space">
+    <section class="section container is-spaced">
       <h2 class="title is-size-2"> Projetos </h2>
-      <div>
+      <div class="projects-wrap">
         <nuxt-link
-          class="project-card"
-          :to="'projects/'+ project.slug"
           v-for="(project, index) in projects"
           :key="index"
+          class="project-card"
+          :to="'projects/'+ project.slug"
+          :style="{ backgroundColor: project.bgColor }"
           >
           <img
             class="project-card__logo"
@@ -224,27 +225,42 @@ export default {
 }
 
 .projects {
-  width: 100vw;
+  width: 100%;
   max-width: 85rem;
   display: grid;
   grid-template-columns: 33.3% 33.3% 33.3%;
   grid-template-rows: 17rem 17rem;
 }
 
+.projects-wrap {
+  display: grid;
+  grid-auto-rows: auto;
+  grid-gap: 1.5rem 1.5rem;
+  grid-template-columns: repeat(3, calc(33.3% - 1rem));
+  justify-items: stretch;
+}
+
 .project-card {
-  display: inline-flex;
+  align-items: center;
   background-color: white;
   box-shadow: 0 .03rem .5rem .02rem rgba(30, 30, 30, .3);
-  max-width: 30rem;
+  border-radius: 1.5rem;
   color: #35495e;
-  padding: 1.5rem;
-  margin: 1rem;
+  display: inline-flex;
   justify-content: center;
-  align-items: center;
+  padding: 1.5rem;
+  padding-top: 60%;
+  position: relative;
 }
 
 .project-card__logo {
-  max-width: 100%;
-  max-height: 100%;
+  max-width: calc(100% - 3rem);
+  max-height: calc(100% - 3rem);
+  height: auto;
+  width: auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
 }
 </style>
