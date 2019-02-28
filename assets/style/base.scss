@@ -28,13 +28,13 @@ p {
 }
 
 .container.is-spaced {
-  padding-top: 10rem;
-  padding-bottom: 8rem;
+  padding-top: 5rem;
+  padding-bottom: 4rem;
 }
 
 .container {
   width: 100%;
-  max-width: 105rem;
+  max-width: 100rem;
   margin: auto;
   padding: 1.5rem;
 }
@@ -63,8 +63,8 @@ p {
 .subtitle {
   color: var(--color-text);
   text-align: center;
-  margin-bottom: .6em;
-  margin-top: .5em;
+  margin-bottom: 1.7em;
+  margin-top: 1.3em;
 
   &.is-black {
     color: var(--color-text-black);
@@ -89,5 +89,4 @@ p {
   margin-top: 1.5rem;
   margin-bottom: 1.5rem;
 }
-
 

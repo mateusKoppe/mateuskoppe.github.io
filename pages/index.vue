@@ -88,6 +88,7 @@
     <div style="clear: both"></div>
     <section class="section container is-spaced">
       <h2 class="title is-size-2"> Projetos </h2>
+      <p class="subtitle is-size-1 is-black"> Aqui estão alguns dos projetos que eu desenvolvi ou participei. </p>
       <div class="projects-wrap">
         <nuxt-link
           v-for="(project, index) in projects"
@@ -160,6 +161,7 @@ export default {
   float: left;
   width: 100%;
   margin-top: calc(var(--overlay-size) * -1);
+  margin-bottom: 4rem;
 }
 
 .skill-category-wrap {
