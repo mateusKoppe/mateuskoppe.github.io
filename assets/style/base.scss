@@ -28,8 +28,13 @@ p {
 }
 
 .container.is-spaced {
-  padding-top: 5rem;
+  padding-top: 4rem;
   padding-bottom: 4rem;
+}
+
+.container.is-big-spaced {
+  padding-top: 9rem;
+  padding-bottom: 6rem;
 }
 
 .container {

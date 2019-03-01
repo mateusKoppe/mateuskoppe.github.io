@@ -1,7 +1,7 @@
 <template>
   <div>
     <section class="intruduction-section">
-      <div class="container is-spaced">
+      <div class="container is-big-spaced">
         <h1 class="title is-size-1"> Procurando por um Web Developer? </h1>
         <p class="subtitle is-size-1 is-black"> Mateus Koppe, Full-stack developer. </p>
         <br>

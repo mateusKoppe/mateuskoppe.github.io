@@ -1,10 +1,5 @@
 <template>
   <div>
-    <header class="app-header">
-      <nuxt-link to="/">
-        <img class="logo" src="~/assets/images/logo.png">
-      </nuxt-link>
-    </header>
     <nuxt/>
   </div>
 </template>
