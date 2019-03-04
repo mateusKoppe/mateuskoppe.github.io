@@ -63,6 +63,15 @@ p {
   &.is-size-2 {
     font-size: 4rem;
   }
+
+  &.is-size-3 {
+    font-size: 3.2rem;
+  }
+
+  &.is-size-4 {
+    font-size: 3rem;
+    font-weight: 400;
+  }
 }
 
 .subtitle {

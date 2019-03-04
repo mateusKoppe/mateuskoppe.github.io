@@ -104,9 +104,18 @@
         </nuxt-link>
       </div>
     </section>
-    <section class="section container is-spaced">
-      <h2 class="title is-size-2"> Contato </h2>
-      <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque sapien velit, aliquet eget commodo nec, auctor a sapien. Nam eu neque vulputate diam rhoncus faucibus. Curabitur quis varius libero. Lorem. </p>
+    <section class="section  is-primary contact-session">
+      <div class="container is-spaced">
+        <h2 class="title is-size-2"> Contato </h2>
+        <h3 class="title is-size-4"> E-mail </h3>
+        <a href="mailto:mateus.koppe@gmail.com"> mateus.koppe@gmail.com </a>
+        <h3 class="title is-size-4"> GitHub </h3>
+        <a href="https://github.com/mateusKoppe" target="_blank"> /mateusKoppe </a>
+        <h3 class="title is-size-4"> Linked-In </h3>
+        <a href="https://www.linkedin.com/in/mateusKoppe/" target="_blank"> /mateusKoppe </a>
+        <h3 class="title is-size-4"> Telegram </h3>
+        <a href="https://t.me/mateusKoppe" target="_blank"> @mateusKoppe </a>
+      </div>
     </section>
   </div>
 </template>
@@ -264,5 +273,22 @@ export default {
   top: 50%;
   left: 50%;
   transform: translateX(-50%) translateY(-50%);
+}
+
+.contact-session {
+  margin-top: 8rem;
+  text-align: center;
+
+  .title.is-size-4 {
+    margin-bottom: 0.1em;
+    margin-top: 1.2em;
+  }
+
+  a {
+    color: var(--color-text);
+    font-size: 1.2em;
+    text-decoration: none;
+    font-weight: 400;
+  }
 }
 </style>
