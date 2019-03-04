@@ -1,6 +1,7 @@
 <template>
   <div>
-    <section class="intruduction-section">
+
+    <section class="section" id="intruduction">
       <div class="container is-big-spaced">
         <h1 class="title is-size-1"> Procurando por um Web Developer? </h1>
         <p class="subtitle is-size-1 is-black"> Mateus Koppe, Full-stack developer. </p>
@@ -10,7 +11,8 @@
         </figure>
       </div>
     </section>
-    <section class="about-section section is-primary">
+
+    <section class="section is-primary" id="about">
       <div class="container is-spaced">
         <h2 class="title is-size-2"> Sobre </h2>
         <p> Olá, me chamo Mateus Koppe e sou Web Developer a 3 anos. Tenho experiência em desenvolvimento de sites, com foco em responsividade e conversão de leads. </p>
@@ -19,7 +21,8 @@
         <br>
       </div>
     </section>
-    <section class="section skills-section is-primary">
+
+    <section class="section is-primary" id="skills">
       <div class="container">
         <div class="skills-section-floating-box">
           <div class="big-card">
@@ -86,7 +89,8 @@
       </div>
     </section>
     <div style="clear: both"></div>
-    <section class="section container is-spaced">
+
+    <section class="section container is-spaced" id="projects">
       <h2 class="title is-size-2"> Projetos </h2>
       <p class="subtitle is-size-1 is-black"> Aqui estão alguns dos projetos que eu desenvolvi ou participei. </p>
       <div class="projects-wrap">
@@ -104,7 +108,8 @@
         </nuxt-link>
       </div>
     </section>
-    <section class="section  is-primary contact-session">
+
+    <section class="section is-primary" id="contact">
       <div class="container is-spaced">
         <h2 class="title is-size-2"> Contato </h2>
         <h3 class="title is-size-4"> E-mail </h3>
@@ -117,6 +122,7 @@
         <a href="https://t.me/mateusKoppe" target="_blank"> @mateusKoppe </a>
       </div>
     </section>
+
   </div>
 </template>
 
@@ -132,11 +138,7 @@ export default {
 </script>
 
 <style lang="scss">
-.wellcoming {
-  font-size: 11rem;
-}
-
-.intruduction-section {
+#intruduction {
   padding: 3rem 0;
   text-align: center;
 
@@ -155,127 +157,123 @@ export default {
   }
 }
 
-.about-section {
+#about {
   text-align: center;
   font-size: 2.5rem;
   padding: 0 10rem;
 }
 
-.skills-section {
+#skills {
   --overlay-size: 20rem;
   padding-top: var(--overlay-size);
-}
 
-.skills-section-floating-box {
-  float: left;
-  width: 100%;
-  margin-top: calc(var(--overlay-size) * -1);
-  margin-bottom: 4rem;
-}
+  .skills-section-floating-box {
+    float: left;
+    width: 100%;
+    margin-top: calc(var(--overlay-size) * -1);
+    margin-bottom: 4rem;
+  }
 
-.skill-category-wrap {
-  display: grid;
-  grid-template-columns: 33.3% 33.3% 33.3%;
-}
+  .skill-category-wrap {
+    display: grid;
+    grid-template-columns: 33.3% 33.3% 33.3%;
+  }
 
-.skill-category {
-  border-color: rgba(30, 30, 30, .2);
-  border-style: solid;
-  border-width: 0;
-  border-right-width: 1px;
-  border-top-width: 1px;
-  padding: 2rem;
-  text-align: center;
+  .skill-category {
+    border-color: rgba(30, 30, 30, .2);
+    border-style: solid;
+    border-width: 0;
+    border-right-width: 1px;
+    border-top-width: 1px;
+    padding: 2rem;
+    text-align: center;
 
-  &:last-child {
-    border-right-width: 0px;
+    &:last-child {
+      border-right-width: 0px;
+    }
+  }
+
+  .skill-category-title {
+    color: var(--color-primary-dark);
+    font-weight: 600;
+    margin-top: .8em;
+    margin-bottom: .3em;
+
+    &.is-size-1 {
+      font-size: 1.3em;
+    }
+
+    &.is-size-2 {
+      font-weight: 400;
+      font-size: 1em;
+    }
+  }
+
+  .skill-category-list {
+    list-style: none;
+    line-height: 1.75em;
+    padding: 0;
+  }
+  .skill-category-icon {
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: block;
+    height: 11rem;
+    margin-top: 1rem;
+    margin-bottom: 3rem;
+
+    &.is-front-end {
+      background-image: url(~/assets/images/web.svg);
+    }
+
+    &.is-back-end {
+      background-image: url(~/assets/images/cog.svg);
+    }
+
+    &.is-anothers {
+      background-image: url(~/assets/images/lamp.svg);
+    }
   }
 }
 
-.skill-category-title {
-  color: var(--color-primary-dark);
-  font-weight: 600;
-  margin-top: .8em;
-  margin-bottom: .3em;
 
-  &.is-size-1 {
-    font-size: 1.3em;
+#projects {
+
+  .projects-wrap {
+    display: grid;
+    grid-auto-rows: auto;
+    grid-gap: 1.5rem 1.5rem;
+    grid-template-columns: repeat(3, calc(33.3% - 1rem));
+    justify-items: stretch;
   }
 
-  &.is-size-2 {
-    font-weight: 400;
-    font-size: 1em;
-  }
-}
-
-.skill-category-list {
-  list-style: none;
-  line-height: 1.75em;
-  padding: 0;
-}
-.skill-category-icon {
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
-  display: block;
-  height: 11rem;
-  margin-top: 1rem;
-  margin-bottom: 3rem;
-
-  &.is-front-end {
-    background-image: url(~/assets/images/web.svg);
+  .project-card {
+    align-items: center;
+    background-color: white;
+    box-shadow: 0 .03rem .5rem .02rem rgba(30, 30, 30, .3);
+    border-radius: 1.5rem;
+    color: #35495e;
+    display: inline-flex;
+    justify-content: center;
+    padding: 1.5rem;
+    padding-top: 60%;
+    position: relative;
   }
 
-  &.is-back-end {
-    background-image: url(~/assets/images/cog.svg);
-  }
-
-  &.is-anothers {
-    background-image: url(~/assets/images/lamp.svg);
+  .project-card__logo {
+    max-width: calc(100% - 3rem);
+    max-height: calc(100% - 3rem);
+    height: auto;
+    width: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
   }
 }
 
-.projects {
-  width: 100%;
-  max-width: 85rem;
-  display: grid;
-  grid-template-columns: 33.3% 33.3% 33.3%;
-  grid-template-rows: 17rem 17rem;
-}
-
-.projects-wrap {
-  display: grid;
-  grid-auto-rows: auto;
-  grid-gap: 1.5rem 1.5rem;
-  grid-template-columns: repeat(3, calc(33.3% - 1rem));
-  justify-items: stretch;
-}
-
-.project-card {
-  align-items: center;
-  background-color: white;
-  box-shadow: 0 .03rem .5rem .02rem rgba(30, 30, 30, .3);
-  border-radius: 1.5rem;
-  color: #35495e;
-  display: inline-flex;
-  justify-content: center;
-  padding: 1.5rem;
-  padding-top: 60%;
-  position: relative;
-}
-
-.project-card__logo {
-  max-width: calc(100% - 3rem);
-  max-height: calc(100% - 3rem);
-  height: auto;
-  width: auto;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translateX(-50%) translateY(-50%);
-}
-
-.contact-session {
+#contact {
   margin-top: 8rem;
   text-align: center;
 
