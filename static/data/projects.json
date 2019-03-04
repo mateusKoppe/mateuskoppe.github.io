@@ -13,6 +13,13 @@
       "logo": "logo.png",
       "bgColor": "#d8ba82",
       "website": "http://menpet.com.br/"
+    },
+    {
+      "name": "Brastelha",
+      "slug": "brastelha",
+      "logo": "logo.png",
+      "bgColor": "#254b6a",
+      "website": "https://brastelha.ind.br/"
     }
   ]
 }
