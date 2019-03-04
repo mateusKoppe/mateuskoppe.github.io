@@ -94,18 +94,19 @@
       <h2 class="title is-size-2"> Projetos </h2>
       <p class="subtitle is-size-1 is-black"> Aqui estão alguns dos projetos que eu desenvolvi ou participei. </p>
       <div class="projects-wrap">
-        <nuxt-link
+        <a
           v-for="(project, index) in projects"
-          :key="index"
           class="project-card"
-          :to="'projects/'+ project.slug"
+          target="blank"
+          :key="index"
+          :href="project.website"
           :style="{ backgroundColor: project.bgColor }"
           >
           <img
             class="project-card__logo"
             :src="'/projects/'+project.slug+'/'+project.logo"
             >
-        </nuxt-link>
+        </a>
       </div>
     </section>
 

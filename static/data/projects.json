@@ -4,25 +4,15 @@
       "name": "Orgânicos Pilatti",
       "slug": "organicos-pilatti",
       "logo": "logo.png",
-      "bgColor": "#89c351"
+      "bgColor": "#89c351",
+      "website": "https://organicospilatti.com.br/"
     },
     {
       "name": "Menpet",
       "slug": "menpet",
       "logo": "logo.png",
-      "bgColor": "#d8ba82"
-    },
-    {
-      "name": "Orgânicos Pilatti",
-      "slug": "organicos-pilatti",
-      "logo": "logo.png",
-      "bgColor": "#89c351"
-    },
-    {
-      "name": "Menpet",
-      "slug": "menpet",
-      "logo": "logo.png",
-      "bgColor": "#d8ba82"
+      "bgColor": "#d8ba82",
+      "website": "http://menpet.com.br/"
     }
   ]
 }
