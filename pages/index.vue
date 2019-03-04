@@ -162,6 +162,14 @@ export default {
   text-align: center;
   font-size: 2.5rem;
   padding: 0 10rem;
+
+  @media (max-width: 860px) {
+    padding: 0 10%;
+  }
+
+  @media (max-width: 400px) {
+    padding: 0 1.5rem;
+  }
 }
 
 #skills {
@@ -177,7 +185,15 @@ export default {
 
   .skill-category-wrap {
     display: grid;
-    grid-template-columns: 33.3% 33.3% 33.3%;
+    grid-template-columns: repeat(3, 33.3%);
+
+    @media (max-width: 660px) {
+      grid-template-columns: repeat(2, 50%);
+    }
+
+    @media (max-width: 470px) {
+      grid-template-columns: 100%;
+    }
   }
 
   .skill-category {
@@ -191,6 +207,10 @@ export default {
 
     &:last-child {
       border-right-width: 0px;
+
+      @media (max-width: 660px) and (min-width: 471px) {
+        grid-column: span 2;
+      }
     }
   }
 
@@ -215,6 +235,7 @@ export default {
     line-height: 1.75em;
     padding: 0;
   }
+
   .skill-category-icon {
     background-size: contain;
     background-repeat: no-repeat;
@@ -247,6 +268,14 @@ export default {
     grid-gap: 1.5rem 1.5rem;
     grid-template-columns: repeat(3, calc(33.3% - 1rem));
     justify-items: stretch;
+
+    @media (max-width: 660px) {
+      grid-template-columns: repeat(2, calc(50% - 1.5rem));
+    }
+
+    @media (max-width: 440px) {
+      grid-template-columns: 100%;
+    }
   }
 
   .project-card {

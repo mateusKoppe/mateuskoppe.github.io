@@ -3,6 +3,10 @@ html {
   font-size: 10px;
   box-sizing: border-box;
   background-color: white;
+
+  @media (max-width: 500px) {
+    font-size: 9px;
+  }
 }
 
 body {
@@ -19,6 +23,10 @@ body {
 p {
   margin-top: .2em;
   margin-bottom: .25em;
+
+  @media (max-width: 600px) {
+    line-height: 1.4;
+  }
 }
 
 .section.is-primary {
