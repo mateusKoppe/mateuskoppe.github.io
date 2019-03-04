@@ -150,7 +150,7 @@ export default {
     margin: 1rem auto;
     border-radius: 4rem;
     overflow: hidden;
-    box-shadow: 0rem 0.3rem 1rem 0.3rem rgba(30, 30, 30, .4);
+    box-shadow: 0 4px 10px 1px rgba(50,50,50,0.3), 0 0 0 1px #E6ECF8;
 
     img {
       width: 100%;
@@ -282,7 +282,7 @@ export default {
   .project-card {
     align-items: center;
     background-color: white;
-    box-shadow: 0 .03rem .5rem .02rem rgba(30, 30, 30, .3);
+    box-shadow: 0 4px 10px 1px rgba(50,50,50,0.3), 0 0 0 1px #E6ECF8;
     border-radius: 1.5rem;
     color: #35495e;
     display: inline-flex;
