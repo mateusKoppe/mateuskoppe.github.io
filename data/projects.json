@@ -1,0 +1,25 @@
+{
+  "projects": [
+    {
+      "name": "Orgânicos Pilatti",
+      "slug": "organicos-pilatti",
+      "logo": "logo.png",
+      "bgColor": "#89c351",
+      "website": "https://organicospilatti.com.br/"
+    },
+    {
+      "name": "Menpet",
+      "slug": "menpet",
+      "logo": "logo.png",
+      "bgColor": "#d8ba82",
+      "website": "http://menpet.com.br/"
+    },
+    {
+      "name": "Brastelha",
+      "slug": "brastelha",
+      "logo": "logo.png",
+      "bgColor": "#254b6a",
+      "website": "https://brastelha.ind.br/"
+    }
+  ]
+}
