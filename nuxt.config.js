@@ -28,6 +28,7 @@ module.exports = {
   ** Build configuration
   */
   build: {
+    publicPath: '/assets/',
     /*
      ** Run ESLint on save
     */
