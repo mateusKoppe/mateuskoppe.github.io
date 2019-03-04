@@ -113,6 +113,7 @@
     <section class="section is-primary" id="contact">
       <div class="container is-spaced">
         <h2 class="title is-size-2"> Contato </h2>
+        <p class="brief"> Quer trocar uma ideia? Entre em contato comigo! </p>
         <h3 class="title is-size-4"> E-mail </h3>
         <a href="mailto:mateus.koppe@gmail.com"> mateus.koppe@gmail.com </a>
         <h3 class="title is-size-4"> GitHub </h3>
@@ -307,6 +308,10 @@ export default {
   margin-top: 8rem;
   text-align: center;
 
+  .brief {
+    font-size: 2.2rem;
+  }
+
   .title.is-size-4 {
     margin-bottom: 0.1em;
     margin-top: 1.2em;
@@ -317,6 +322,10 @@ export default {
     font-size: 1.2em;
     text-decoration: none;
     font-weight: 400;
+
+    &:hover {
+      text-decoration: underline;
+    }
   }
 }
 </style>
