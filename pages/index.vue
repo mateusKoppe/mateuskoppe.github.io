@@ -17,7 +17,7 @@
         <h2 class="title is-size-2"> Sobre </h2>
         <p> Olá, me chamo Mateus Koppe e sou Web Developer a 3 anos. Tenho experiência em desenvolvimento de sites, com foco em responsividade e conversão de leads. </p>
         <p> Além disso desenvolvo sistemas de média e baixa complexidade, precisa de um sistema para gerenciar o seu negócio? Pode contar comigo! </p>
-        <p> Faço manunteção em projetos com uma stack semelhar ao meu conhecimento. </p>
+        <p> Faço manunteção em projetos com uma stack similar ao meu conhecimento. </p>
         <br>
       </div>
     </section>
