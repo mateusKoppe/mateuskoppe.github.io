@@ -2,12 +2,12 @@
   <div>
 
     <section class="section" id="intruduction">
-      <div class="container is-big-spaced">
-        <h1 class="title is-size-1"> Procurando por um Web Developer? </h1>
-        <p class="subtitle is-size-1 is-black"> Mateus Koppe, Full-stack developer. </p>
+      <div class="container">
+        <h1 class="title is-size-1"> Koppe </h1>
+        <p class="subtitle is-size-1 is-black"> Full-stack developer. </p>
         <br>
         <figure class="photo">
-          <img src="~/assets/images/koppe.jpg">
+          <img src="../assets/images/koppe.jpg">
         </figure>
       </div>
     </section>
@@ -15,9 +15,9 @@
     <section class="section is-primary" id="about">
       <div class="container is-spaced">
         <h2 class="title is-size-2"> Sobre </h2>
-        <p> Olá, me chamo Mateus Koppe e sou Web Developer a 3 anos. Tenho experiência em desenvolvimento de sites, com foco em responsividade e conversão de leads. </p>
-        <p> Além disso desenvolvo sistemas de média e baixa complexidade, precisa de um sistema para gerenciar o seu negócio? Pode contar comigo! </p>
-        <p> Faço manunteção em projetos com uma stack similar ao meu conhecimento. </p>
+        <p> Me chamo Mateus Koppe e sou Web Developer com 4 anos de experiência. </p>
+        <p> Curso Ciência da computação na Universidade Federal da Fronteira Sul (UFFS). </p>
+        <p> Sou diretor Web na empresa junior <a href="https://fronteiratec.com/" target="blank">FronteiraTec</a>. </p>
         <br>
       </div>
     </section>
@@ -38,24 +38,23 @@
                   <ul class="skill-category-list">
                     <li> JavaScript </li>
                     <li> Scss </li>
-                    <li> Pug </li>
                   </ul>
                   <h4 class="skill-category-title is-size-2"> Frameworks </h4>
                   <ul class="skill-category-list">
                     <li> Vue </li>
+                    <li> React </li>
                     <li> AngularJs (legado) </li>
                     <li> Bootstrap </li>
                   </ul>
                   <h4 class="skill-category-title is-size-2"> Habilidades </h4>
                   <ul class="skill-category-list">
                     <li> Responsividade </li>
-                    <li> Pwa </li>
                   </ul>
                 </div>
                 <div class="skill-category">
                   <span class="skill-category-icon is-back-end"></span>
                   <h3 class="skill-category-title is-size-1"> Back-end </h3>
-                  <h4 class="skill-category-title is-size-2"> Linguagens </h4>
+                  <h4 class="skill-category-title is-size-2"> Linguagens/Plataformas </h4>
                   <ul class="skill-category-list">
                     <li> Node.Js </li>
                     <li> Php </li>
@@ -80,6 +79,9 @@
                     <li>Gulp</li>
                     <li>Git</li>
                     <li>Linux</li>
+                    <li>Scrum</li>
+                    <li>Git Flow</li>
+                    <li>Boas práticas</li>
                   </ul>
                 </div>
               </div>
@@ -92,7 +94,7 @@
 
     <section class="section container is-spaced" id="projects">
       <h2 class="title is-size-2"> Projetos </h2>
-      <p class="subtitle is-size-1 is-black"> Aqui estão alguns dos projetos que eu desenvolvi ou participei. </p>
+      <p class="subtitle is-size-1 is-black"> Aqui estão alguns dos projetos que eu desenvolvi ou tive grande participação. </p>
       <div class="projects-wrap">
         <a
           v-for="(project, index) in projects"
@@ -121,7 +123,7 @@
         <h3 class="title is-size-4"> Linked-In </h3>
         <a href="https://www.linkedin.com/in/mateusKoppe/" target="_blank"> /mateusKoppe </a>
         <h3 class="title is-size-4"> Telegram </h3>
-        <a href="https://t.me/mateusKoppe" target="_blank"> @mateusKoppe </a>
+        <a href="https://t.me/Koppemon" target="_blank"> @Koppemon </a>
       </div>
     </section>
 
@@ -141,7 +143,7 @@ export default {
 
 <style lang="scss">
 #intruduction {
-  padding: 3rem 0;
+  padding: 2rem 0 5rem 0;
   text-align: center;
 
   .photo {
@@ -247,15 +249,15 @@ export default {
     margin-bottom: 3rem;
 
     &.is-front-end {
-      background-image: url(~/assets/images/web.svg);
+      background-image: url(../assets/images/web.svg);
     }
 
     &.is-back-end {
-      background-image: url(~/assets/images/cog.svg);
+      background-image: url(../assets/images/cog.svg);
     }
 
     &.is-anothers {
-      background-image: url(~/assets/images/lamp.svg);
+      background-image: url(../assets/images/lamp.svg);
     }
   }
 }

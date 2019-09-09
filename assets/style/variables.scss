@@ -1,10 +1,11 @@
+
 $color-text: #293347;
 $color-text-black: #141414;
 $color-primary: #6843FF;
 $color-primary-dark: #301890;
 
 html {
-  --color-text: #293347;
+  --color-text: #{$color-text};
   --color-text-black: #{$color-text-black};
   --color-primary: #{$color-primary};
   --color-primary-dark: #{$color-primary-dark};

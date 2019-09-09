@@ -33,6 +33,10 @@ p {
   --color-text: white;
   color: var(--color-text);
   background-color: var(--color-primary);
+
+  a {
+    color: white;
+  }
 }
 
 .container.is-spaced {
