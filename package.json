@@ -11,7 +11,7 @@
     "generate": "nuxt generate",
     "lint": "eslint --ext .js,.vue --ignore-path .gitignore .",
     "precommit": "npm run lint",
-    "publish": "gh-pages -d dist -r https://github.com/mateusKoppe/mateusKoppe.github.io -b master"
+    "publish": "gh-pages -b master"
   },
   "dependencies": {
     "axios": "^0.18.1",
