@@ -2,9 +2,8 @@
   <section class="section is-primary section-about">
     <div class="container is-spaced">
       <h2 class="title is-size-2"> Sobre </h2>
-      <p> Me chamo Mateus Koppe e sou Web Developer com 4 anos de experiência. </p>
+      <p> Me chamo Mateus Koppe e sou Web Dev com 4 anos de experiência. </p>
       <p> Curso Ciência da computação na Universidade Federal da Fronteira Sul (UFFS). </p>
-      <p> Sou diretor Web na empresa junior <a href="https://fronteiratec.com/" target="blank">FronteiraTec</a>. </p>
       <br>
     </div>
   </section>

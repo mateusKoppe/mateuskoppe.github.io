@@ -12,17 +12,10 @@
                 <div class="skill-category">
                   <span class="skill-category-icon is-front-end"></span>
                   <h3 class="skill-category-title is-size-1"> Front-end </h3>
-                  <h4 class="skill-category-title is-size-2"> Linguagens </h4>
-                  <ul class="skill-category-list">
-                    <li> JavaScript </li>
-                    <li> Scss </li>
-                  </ul>
                   <h4 class="skill-category-title is-size-2"> Frameworks </h4>
                   <ul class="skill-category-list">
                     <li> Vue </li>
                     <li> React </li>
-                    <li> AngularJs (legado) </li>
-                    <li> Bootstrap </li>
                   </ul>
                   <h4 class="skill-category-title is-size-2"> Habilidades </h4>
                   <ul class="skill-category-list">
@@ -42,7 +35,6 @@
                   <ul class="skill-category-list">
                     <li> Laravel </li>
                     <li> Express </li>
-                    <li> Slim-Php </li>
                   </ul>
                   <h4 class="skill-category-title is-size-2"> Habilidades </h4>
                   <ul class="skill-category-list">
@@ -54,10 +46,8 @@
                   <h3 class="skill-category-title is-size-1"> Além disso... </h3>
                   <ul class="skill-category-list">
                     <li>Docker</li>
-                    <li>Gulp</li>
                     <li>Git</li>
                     <li>Linux</li>
-                    <li>Scrum</li>
                     <li>Git Flow</li>
                     <li>Boas práticas</li>
                   </ul>

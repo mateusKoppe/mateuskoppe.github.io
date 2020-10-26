@@ -9,8 +9,6 @@
       <a href="https://github.com/mateusKoppe" target="_blank"> /mateusKoppe </a>
       <h3 class="title is-size-4"> Linked-In </h3>
       <a href="https://www.linkedin.com/in/mateusKoppe/" target="_blank"> /mateusKoppe </a>
-      <h3 class="title is-size-4"> Telegram </h3>
-      <a href="https://t.me/Koppemon" target="_blank"> @Koppemon </a>
     </div>
   </section>
 </template>
