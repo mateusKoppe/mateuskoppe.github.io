@@ -1,0 +1,13 @@
+html {
+  font-size: 10px;
+}
+
+body {
+  margin: 0;
+  font-family: 'Cantarell', sans-serif;
+  font-size: 1.6rem;
+}
+
+* {
+  box-sizing: border-box;
+}
